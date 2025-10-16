@@ -1,0 +1,109 @@
+
+:root {
+    --text-color: #212832;
+    --desc-color: #6F727B;
+    --title-color: #181E4B;
+    --bg-color1: #FEF0DA;
+    --bg-color2: #F1A501;
+    --bg-color3: #DF6951;
+
+    --main-font-family: 'Poppins';
+    --title-font-family: 'Volkhov';
+}
+
+
+main .top_page{
+    display:flex ;
+    justify-content: center;
+}
+
+main .top_page .right_part img{
+    max-width: 650px;
+    width: 100%;
+    object-fit: cover;
+    user-select: none;
+    /* background-color: blue; */
+
+}
+
+main .top_page .left_part{
+    display: flex;
+    max-width: 500px ;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: red; */
+    gap: 20px;
+}
+
+main .top_page .left_part p:first-of-type{
+    color :var(--bg-color3) ;
+    font-weight: 800;    
+}
+
+main .top_page .left_part h1{
+    font-size: 4rem;
+    color: var(--title-color);
+    font-family: var(--title-font-family);
+}
+
+main .top_page .left_part h1 span{
+
+    position: relative;
+    font-family: inherit;
+}
+
+main .top_page .left_part h1 span img{
+    z-index: -1;
+    position: absolute;
+    bottom: 16%;
+    right: 50%;
+    transform: translateX(60%) scale(.8);
+
+}
+
+main .top_page .left_part p:last-of-type{
+    color: var(--desc-color);
+    width: 70%;
+}
+
+main .top_page .left_part .buttons{
+    display: flex;
+    gap: 40px;
+}
+
+main .top_page .left_part .buttons a{
+    padding: 10px;
+    background-color: var(--bg-color2);
+    color: white;
+    border-radius: 10px;
+}
+
+main .top_page .left_part .buttons .demo{
+    display: flex;
+    align-items: center;
+}
+
+main .top_page .left_part .buttons .demo button{
+    width: 50px;
+    height: 50px;
+    border-radius: 1000px;
+    background-color: var(--bg-color3);
+    border: none;
+    margin-right: 10px ;
+
+    position: relative;
+
+}
+
+main .top_page .left_part .buttons .demo button img{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50% , -50%);
+}
+
+main .top_page .left_part .buttons .demo span{
+    color: var(--desc-color);
+}
+
+/* section2*/
