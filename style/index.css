@@ -108,7 +108,7 @@ main .top_page .left_part .buttons .demo span {
 
 section.services {
     padding: 5px;
-    height: 600px;
+    height: 700px;
     min-height: fit-content;
     padding-bottom: 25px;
 
@@ -137,13 +137,13 @@ section.services .service_card_container {
     gap: 50px;
 }
 
-section.services .service_card_container .service_card{
+section.services .service_card_container .service_card {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 
-    width: 250px ;
+    width: 300px;
     background-color: white;
     border-radius: 36px;
     padding: 30px;
@@ -151,25 +151,25 @@ section.services .service_card_container .service_card{
     position: relative;
     transition: .125s ease;
 
-    
-    img{
+
+    img {
         height: 100px;
-        width:  100px;
+        width: 100px;
         margin-bottom: 30px;
     }
 
-    h3{
+    h3 {
         color: var(--title-color);
-        text-wrap: nowrap ;  
+        text-wrap: nowrap;
     }
 
-    p{
+    p {
         width: 100%;
         text-align: center;
         color: var(--desc-color);
     }
-    
-    .hover{
+
+    .hover {
         position: absolute;
         bottom: 5px;
         left: 5px;
@@ -179,22 +179,116 @@ section.services .service_card_container .service_card{
     }
 }
 
-section.services .service_card_container .service_card:hover{
-    
+section.services .service_card_container .service_card:hover {
+
     box-shadow: 0 50px 80px 0px rgba(0, 0, 0, 0.2);
-    
-    .hover{
+
+    .hover {
         position: absolute;
         bottom: -50px;
         left: -50px;
         z-index: -1;
-    }   
+    }
 }
 
 
 
 /* section3*/
 
-section.destinations{
-    background-color: red;
+section.destinations {
+
+    height: 700px;
+    min-height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: red; */
+}
+
+section.destinations .session_description {
+    color: var(--desc-color);
+    font-weight: 600;
+}
+
+section.destinations .session_description+h2 {
+    font-size: 2.6rem;
+    color: var(--title-color);
+    font-family: var(--title-font-family);
+    margin-bottom: 50px;
+}
+
+section.destinations .destination_container {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    gap: 25px;
+    overflow-x: auto;
+    padding: 30px 0;
+    width: 100%;
+
+}
+
+section.destinations .destination_container .destination_card {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 0 0 auto;
+
+    background-color: white;
+
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all .125s ease-in-out;
+
+
+    /* box-shadow: 1px 2px 10px 1px rgba(120, 120, 120, 0.4); */
+        box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.2);
+
+    color: var(--desc-color);
+
+
+    img {
+        height: 60%;
+        background-color: var(--bg-color1);
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+
+    .title {
+        padding: 10px;
+    }
+
+    .price {
+        position: absolute;
+        top: calc(60% + 10px);
+        right: 10px;
+    }
+
+    .description {
+        width: 100%;
+
+        font-size: 13px;
+        font-size: 10px;
+
+        padding: 10px;
+        text-align: center;
+        overflow: hidden;
+
+    }
+}
+
+section.destinations .destination_container .destination_card:hover {
+    transform: translateY(-5px);
+    color: var(--text-color);
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.3);
+
 }
