@@ -143,4 +143,10 @@ footer {
         color: #6F727B;
 
     }
+    
+    .foter_decoration{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
 }
