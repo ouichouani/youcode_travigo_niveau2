@@ -144,9 +144,10 @@ footer {
 
     }
     
-    .foter_decoration{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
+}
+
+.foter_decoration{
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
