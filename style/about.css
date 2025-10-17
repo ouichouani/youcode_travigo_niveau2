@@ -135,6 +135,7 @@ main section:nth-child(2)+img {
     top: -100px;
     right: 0;
     object-fit: cover;
+    pointer-events: none;
 
 }
 
@@ -144,5 +145,6 @@ main section:nth-child(2)+img+img {
     left: 0;
     object-fit: cover;
     width: 700px;
+    pointer-events: none;
 
 }
