@@ -30,11 +30,10 @@ Présentation du site web final lors d'une revue de projet devant le formateur e
 📁 Structure du projet
 TRAVIGO/
 │
-├── index.html              # Page d'accueil
-
-├── destinations.html       # Page Destinations
-├── about.html              # Page À propos
-├── contact.html            # Page Contact
+├── index.html              # Page d'accueil .
+├── destinations.html       # Page Destinations .
+├── about.html              # Page À propos .
+├── contact.html            # Page Contact .
 ├── css/
 │   └── style.css
 │   └── index.css
