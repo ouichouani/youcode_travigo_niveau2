@@ -1,0 +1,149 @@
+
+
+:root {
+    --text-color: #212832;
+    --desc-color: #6F727B;
+    --title-color: #181E4B;
+    --bg-color1: #FEF0DA;
+    --bg-color2: #F1A501;
+    --bg-color3: #DF6951;
+
+    --main-font-family: 'Poppins';
+    --title-font-family: 'Volkhov';
+}
+
+
+main {
+    padding: 10px;
+    position: relative;
+    height: 100vh ;
+    min-height: fit-content;
+}
+
+main .top_page {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+main .top_page h1 {
+    font-size: 50px;
+    color: var(--title-color);
+    font-family: var(--title-font-family);
+}
+
+main .top_page p {
+    width: 500px;
+    text-align: center;
+    color: var(--bg-color3);
+}
+
+main section:nth-child(2){
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    margin-bottom: 50px;
+
+}
+
+main section:nth-child(2) form{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 38%;
+    width: 80%;
+    margin-top: 20% ;
+    
+}
+
+main section:nth-child(2) form label{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+main section:nth-child(2) form label span{
+    position: relative;
+    padding-left: 30px;
+    font-family: var(--title-font-family);
+    color: var(--title-color);
+}
+
+main section:nth-child(2) form label span::before{
+    content: '';
+    height: 20px;
+    width: 20px;
+    background: var(--bg-color3);
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+main section:nth-child(2) form label input,
+main section:nth-child(2) form label textarea{
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    background-color: var(--bg-color1);
+    color: #822b19;
+    transition: all .125s;
+}
+
+main section:nth-child(2) form label input::placeholder,
+main section:nth-child(2) form label textarea::placeholder{
+    color: var(--bg-color3);
+}
+
+main section:nth-child(2) form label input:focus,
+main section:nth-child(2) form label textarea:focus{
+    outline: none;
+    border: 1px solid var(--bg-color3);
+    box-shadow: #df695175 0px 0px 0px 3px;
+}
+
+main section:nth-child(2) form label textarea{
+    height: 300px;
+    width: 100%;
+    resize: none;
+
+}
+
+main section:nth-child(2) form button{
+
+    padding: 10px 20px;
+    background-color: var(--bg-color2);
+    color: white;
+    border-radius: 10px;
+
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    outline: none;
+    border: none;
+
+}
+
+main section:nth-child(2) img{
+    object-fit: cover;
+    height: 800px;
+    transform: translateX(-20%);
+    pointer-events: none;
+    user-select: none;
+}
+
+main section:nth-child(2) + img{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    z-index: -1;
+}
+
+

@@ -27,7 +27,7 @@ main .top_page h1 {
 main .top_page p {
     width: 500px;
     text-align: center;
-    color: var(--bg-color2);
+    color: var(--bg-color3);
 }
 
 main .top_page form {
