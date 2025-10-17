@@ -1,18 +1,5 @@
 
 
-:root {
-    --text-color: #212832;
-    --desc-color: #6F727B;
-    --title-color: #181E4B;
-    --bg-color1: #FEF0DA;
-    --bg-color2: #F1A501;
-    --bg-color3: #DF6951;
-
-    --main-font-family: 'Poppins';
-    --title-font-family: 'Volkhov';
-}
-
-
 main {
     padding: 10px;
     position: relative;
