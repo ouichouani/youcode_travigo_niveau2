@@ -471,3 +471,84 @@ section.comments .comment_container img{
     left: 0;
     transform: translate(-50% , -50%);
 }
+
+/* section 6 */
+
+section.brands{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 100px 0;
+
+
+}
+
+/* section 7 */
+
+section.subscrition{
+
+    width: 80%;
+    height: 400px;
+    background-image: url('../svg/index/subscription_bg.svg') ;
+    background-size: cover;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    position: relative;
+
+}
+
+section.subscrition p{
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    color: #5E6282;
+    font-weight: 500;
+
+}
+
+section.subscrition form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    z-index: 2;
+}
+
+section.subscrition form input{
+    height: 60px;
+    width: 400px;
+    border-radius: 10px ;
+    border: none;
+    padding: 20px;
+}
+
+section.subscrition form button{
+    /* height  : fit-content ; */
+    height: 60px;
+    width: 120px;
+    /* padding: 15px; */
+    border-radius: 10px;
+    border: none;
+    background-color: var(--bg-color3);
+    color: white;
+    cursor: pointer;
+}
+
+section.subscrition img{
+    position: absolute;
+    bottom: 0;
+
+}
+
+
+#first-img{
+    right: 0;
+    top: 0;
+    fill: red;
+}
